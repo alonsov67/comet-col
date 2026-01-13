@@ -64,6 +64,7 @@ graph LR
 
 📂 Estructura del Proyecto
 
+```text
 plataforma_auditoria/
 │
 ├── datos_rip/              # Simulación Data Warehouse (Tuva)
