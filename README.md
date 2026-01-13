@@ -34,36 +34,38 @@ Agentes de IA: Utiliza LLMs (Llama 3.1) para razonar sobre la evidencia y estima
 
 El proyecto sigue una arquitectura limpia para separar la ontología médica de la lógica de inteligencia artificial.
 
-graph LR
-    subgraph Data Sources
-        A[JSON RIPS] 
-        G[Knowledge Module]
-    end
-    
-    subgraph Processing
-        B(Tokenization Module)
-        C{Engine Module}
-    end
-    
-    subgraph Storage & AI
-        D[(ChromaDB)]
-        E[Agente Llama 3.1]
-    end
-    
-    subgraph User Interface
-        F[UI Streamlit]
-    end
+```mermaid
+flowchart LR
+  subgraph DS["Data Sources"]
+    A["JSON RIPS"]
+    G["Knowledge Module"]
+  end
 
-    A --> B
-    G -.->|Ontología SISPRO| B
-    B --> C
-    C -->|Vectores| D
-    C -->|Inferencia| E
-    E --> F
+  subgraph P["Processing"]
+    B["Tokenization Module"]
+    C["Engine Module"]
+  end
+
+  subgraph SA["Storage & AI"]
+    D[("ChromaDB")]
+    E["Agente Llama 3.1"]
+  end
+
+  subgraph UI["User Interface"]
+    F["UI Streamlit"]
+  end
+
+  A --> B
+  G -.->|"Ontología SISPRO"| B
+  B --> C
+  C -->|"Vectores"| D
+  C -->|"Inferencia"| E
+  E --> F
+```
 
 
 📂 Estructura del Proyecto
-
+``` text
 plataforma_auditoria/
 │
 ├── datos_rip/              # Simulación Data Warehouse (Tuva)
@@ -77,7 +79,7 @@ plataforma_auditoria/
 │   └── engine.py           # Motor IA (Ollama + Chroma)
 │
 └── app.py                  # Orquestador UI (Streamlit)
-
+```
 
 🚀 4. Instalación y Uso
 
@@ -93,6 +95,7 @@ Paso a paso
 
 Clonar el repositorio:
 
+``` bash
 git clone [https://github.com/alonsov67/comet-col.git](https://github.com/alonsov67/comet-col.git)
 cd comet-col
 
@@ -114,7 +117,7 @@ Ejecutar la Plataforma:
 Asegúrate de tener ollama serve corriendo en otra terminal.
 
 streamlit run app.py
-
+```
 
 🗺️ 5. Hoja de Ruta (Roadmap)
 
