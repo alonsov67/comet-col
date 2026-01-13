@@ -64,7 +64,6 @@ graph LR
 
 📂 Estructura del Proyecto
 
-```text
 plataforma_auditoria/
 │
 ├── datos_rip/              # Simulación Data Warehouse (Tuva)
@@ -93,27 +92,27 @@ Ollama instalado y ejecutándose.
 Paso a paso
 
 Clonar el repositorio:
-```bash
+
 git clone [https://github.com/alonsov67/comet-col.git](https://github.com/alonsov67/comet-col.git)
 cd comet-col
 
 
 Preparar el entorno:
-```bash
+
 conda create -n salud_ai python=3.10
 conda activate salud_ai
 pip install -r requirements.txt
 
 
 Descargar modelos de IA (Local):
-```bash
+
 ollama pull llama3.1
 ollama pull nomic-embed-text
 
 
 Ejecutar la Plataforma:
 Asegúrate de tener ollama serve corriendo en otra terminal.
-```bash
+
 streamlit run app.py
 
 
@@ -144,5 +143,5 @@ Fase 3: Despliegue Cloud
 Migración a infraestructura segura (Azure/AWS) y conexión con APIs reales de interoperabilidad FHIR.
 
 <div align="center">
-<small>Desarrollado para el Equipo de Analitica e innovación del ADRES de Colombia.</small>
+<small>Desarrollado para la Unidad de innovación y Analitica Avanzada ADRES de Colombia.</small>
 </div>
