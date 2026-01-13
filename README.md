@@ -98,24 +98,24 @@ Clonar el repositorio:
 ``` bash
 git clone [https://github.com/alonsov67/comet-col.git](https://github.com/alonsov67/comet-col.git)
 cd comet-col
-
+```
 
 Preparar el entorno:
-
+``` bash
 conda create -n salud_ai python=3.10
 conda activate salud_ai
 pip install -r requirements.txt
-
+```
 
 Descargar modelos de IA (Local):
-
+``` bash
 ollama pull llama3.1
 ollama pull nomic-embed-text
-
+```
 
 Ejecutar la Plataforma:
 Asegúrate de tener ollama serve corriendo en otra terminal.
-
+``` bash
 streamlit run app.py
 ```
 
