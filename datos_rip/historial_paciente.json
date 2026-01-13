@@ -1,0 +1,87 @@
+[
+  {
+    "id": "PT_INTEGRAL_01",
+    "perfil": {
+      "sexo": "M",
+      "edad": 55,
+      "regimen": "Contributivo",
+      "tipo_afiliado": "Cotizante"
+    },
+    "eventos": [
+      {
+        "fecha": "2024-01-10",
+        "cod_ips": "IPS_A",
+        "especialidad_medico": "MED_GENERAL",
+        "diagnosticos": [
+          {
+            "cod": "E119",
+            "desc": "Diabetes 2"
+          }
+        ],
+        "medicamentos": [
+          {
+            "atc": "A10BA02",
+            "desc": "Metformina"
+          }
+        ]
+      },
+      {
+        "fecha": "2024-04-12",
+        "cod_ips": "IPS_A",
+        "especialidad_medico": "MED_INTERNA",
+        "diagnosticos": [
+          {
+            "cod": "E119",
+            "desc": "Diabetes 2"
+          }
+        ],
+        "procedimientos": [
+          {
+            "cod": "903895",
+            "desc": "Creatinina"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "PT_RIESGO_RENAL_02",
+    "perfil": {
+      "sexo": "M",
+      "edad": 58,
+      "regimen": "Contributivo",
+      "tipo_afiliado": "Cotizante"
+    },
+    "eventos": [
+      {
+        "fecha": "2024-01-15",
+        "cod_ips": "IPS_A",
+        "especialidad_medico": "URGENCIAS",
+        "diagnosticos": [
+          {
+            "cod": "E119",
+            "desc": "Diabetes 2"
+          }
+        ],
+        "medicamentos": []
+      },
+      {
+        "fecha": "2024-06-20",
+        "cod_ips": "IPS_B",
+        "especialidad_medico": "NEFROLOGIA",
+        "diagnosticos": [
+          {
+            "cod": "N183",
+            "desc": "Enfermedad Renal"
+          }
+        ],
+        "procedimientos": [
+          {
+            "cod": "903895",
+            "desc": "Creatinina"
+          }
+        ]
+      }
+    ]
+  }
+]

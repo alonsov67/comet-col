@@ -1,0 +1,34 @@
+{
+  "id": "PT_NUEVO_ALTO_COSTO",
+  "perfil": {
+    "sexo": "M",
+    "edad": 60,
+    "regimen": "Contributivo",
+    "tipo_afiliado": "Beneficiario"
+  },
+  "eventos": [
+    {
+      "fecha": "2025-01-05",
+      "cod_ips": "IPS_C",
+      "especialidad_medico": "URGENCIAS",
+      "diagnosticos": [
+        {
+          "cod": "E10",
+          "desc": "Diabetes"
+        }
+      ],
+      "medicamentos": []
+    },
+    {
+      "fecha": "2025-05-10",
+      "cod_ips": "IPS_D",
+      "especialidad_medico": "URGENCIAS",
+      "diagnosticos": [
+        {
+          "cod": "E105",
+          "desc": "Diabetes complicada"
+        }
+      ]
+    }
+  ]
+}
