@@ -34,7 +34,6 @@ Agentes de IA: Utiliza LLMs (Llama 3.1) para razonar sobre la evidencia y estima
 
 El proyecto sigue una arquitectura limpia para separar la ontología médica de la lógica de inteligencia artificial.
 
-```mermaid
 graph LR
     subgraph Data Sources
         A[JSON RIPS] 
